@@ -1,8 +1,4 @@
 
-E
-cloud-gateway/pom.xml,b\b\bb2c8bef7c1e0dd9e24582d2c0b2aa4ce894a308
-y
-Icloud-gateway/src/main/java/gin/cloudgateway/CloudGatewayApplication.java,2\5\25ed21f174d8d396c0144cbdb3b88d33c13a4a4d
 C
 authservice/pom.xml,3\1\315170a2a7501b459c4342962c038749458f281a
 u
@@ -15,10 +11,6 @@ o
 ?authservice/src/main/java/gin/authservice/config/AppConfig.java,1\e\1e5407f7f14316b6a61962b9523f386b8fc38e48
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
-B
-cloud-gateway/mvnw,a\2\a2be20a0ba191f79c14e14704553797160c47746
-H
-cloud-gateway/.gitignore,8\a\8a86f797d3b9be89e886b2616e4a8fe931314158
 >
 eureka/pom.xml,3\0\30f428f04913bd558ce1a35dc4f7699762244c5b
 ]
@@ -57,8 +49,6 @@ j
 :authservice/src/main/java/gin/authservice/models/Role.java,0\0\00d2743a683bc10b3277fd0d1ddc10de71ff1f29
 u
 Eauthservice/src/main/java/gin/authservice/models/RegisterRequest.java,d\f\df0e677e1fb91af359c689bed631b4fd2f4f6cc6
-~
-Ncloud-gateway/src/test/java/gin/cloudgateway/CloudGatewayApplicationTests.java,4\1\41a4d7570e16514ca16a7e22e4620cdbd215e0c6
 j
 :authservice/src/main/java/gin/authservice/models/User.java,e\0\e0ce370e0e3f1b9561456402c988839b77b2978c
 k
@@ -83,8 +73,6 @@ l
 <authservice/src/main/java/gin/authservice/jwt/JwtFilter.java,3\0\30db72b270e95add5d33bfe88c4268f351c82d06
 f
 6eureka/src/main/java/gin/eureka/EurekaApplication.java,c\a\cae44a66ea57aabebd29f5e47f9a81e30de13080
-c
-3cloud-gateway/.mvn/wrapper/maven-wrapper.properties,8\3\8366d4bfa5815de1158ba9c85aff4f283e24f5d3
 l
 <authservice/src/main/java/gin/authservice/type/RoleType.java,b\4\b4f4ac5e765dec6afcaa4861386d54dc6ae43a18
 m
@@ -95,10 +83,44 @@ z
 Jauthservice/src/main/java/gin/authservice/repositories/UserRepository.java,3\f\3f947798f3458dc255bf3ae297eb604128b5af17
 j
 :authservice/src/main/java/gin/authservice/dto/UserDto.java,5\1\5175a86c9b1507cecdaa9c9e09dcb2761a7e6fd6
-F
-cloud-gateway/mvnw.cmd,4\3\43dad9086b66ce6c4ed979c30cf9982f718c8411
 :
 
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 `
 0eureka/src/main/resources/application.properties,e\0\e05f5fd624453571eae65c7bdc1d2c7b90ecc6fa
+…
+Ugateway-service/src/test/java/gin/gateway_service/GatewayServiceApplicationTests.java,d\7\d78c7fb17773583c1257018f29bd4f75f49f66f1
+i
+9gateway-service/src/main/resources/application.properties,4\7\47adf8a62f900b9430a0388cc5ca82c0fb1c1dde
+G
+gateway-service/pom.xml,6\2\627bed90df51db9ce1f2c987c3ddc0380c236bae
+€
+Pgateway-service/src/main/java/gin/gateway_service/GatewayServiceApplication.java,9\3\9346fcbe7da1f8af2606760769e2587a7b5171d7
+H
+gateway-service/mvnw.cmd,d\9\d900909e2cfdf42f7e848b842b9451774db468f1
+J
+gateway-service/.gitignore,8\3\8324caa21528b6ecc85e100e3e07e4c9a67aff7d
+D
+gateway-service/mvnw,5\1\515fa15e0b7fdecfefccf46b8f40ad4f00616329
+e
+5gateway-service/.mvn/wrapper/maven-wrapper.properties,e\2\e2e4e5f33a0b81e7644e4342dd4e6e8b6f8b9fc9
+G
+product-service/pom.xml,f\c\fcf146007330bb14605a232d25428bbf6aa50b7b
+w
+Gproduct-service/src/main/java/gin/product_service/controller/hello.java,c\7\c72b7edb2424788d0b58fbaf4fbb3741332a4dac
+w
+Gproduct-service/src/main/java/gin/product_service/controller/Hello.java,5\5\55c041811b7d44f74ba0d5b99bceb40ab9341ac0
+€
+Pproduct-service/src/main/java/gin/product_service/ProductServiceApplication.java,7\2\7284f60e501e664b1d992b910fdb4a0da609b76e
+O
+gateway-service/application.yml,c\8\c8f21df2e32d78646a941b73a03e6f3ad04223f9
+…
+Uproduct-service/src/test/java/gin/product_service/ProductServiceApplicationTests.java,8\b\8b02bf4aa631acfaef744c85e08b36f5d2478f55
+e
+5product-service/.mvn/wrapper/maven-wrapper.properties,1\6\16fcc8277e6cacfe8a9e56c64fc67764bf47be71
+D
+product-service/mvnw,3\4\344447d942ad563e5dc5e0b328e001456deeb3ce
+H
+product-service/mvnw.cmd,b\9\b9d820991b10fa1220084b368f4b6a517e9fa69e
+J
+product-service/.gitignore,7\e\7e35b8348ccc1e9f1dba3711386c5b915291620b
