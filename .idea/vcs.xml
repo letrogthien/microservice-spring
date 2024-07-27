@@ -2,9 +2,5 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/cloud-gateway" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/cloud-gateway/cloud-gateway-backup" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/eureka" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/eureka/eureka-backup" vcs="Git" />
   </component>
 </project>
