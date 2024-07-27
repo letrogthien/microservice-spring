@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/authservice/demo.iml" filepath="$PROJECT_DIR$/authservice/demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/tester.iml" filepath="$PROJECT_DIR$/.idea/tester.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/springMSA.iml" filepath="$PROJECT_DIR$/.idea/springMSA.iml" />
     </modules>
   </component>
 </project>
