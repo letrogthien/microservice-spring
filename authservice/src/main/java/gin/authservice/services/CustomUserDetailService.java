@@ -22,11 +22,11 @@ public class CustomUserDetailService implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = userService.getByUserName(username)
-                .orElseThrow(()-> new UserNotFoundEx("User Not Found With "+ username));
-        Set<GrantedAuthority> authorities= user.getRoles()
+                .orElseThrow(() -> new UsernameNotFoundException("User Not Found With " + username));
+        Set<GrantedAuthority> authorities = user.getRoles()
                 .stream()
-                .map(role->new SimpleGrantedAuthority(role.getName().toString()))
+                .map(role -> new SimpleGrantedAuthority(role.getName()))
                 .collect(Collectors.toSet());
-        return new org.springframework.security.core.userdetails.User(user.getUserName(), user.getPassword(),authorities);
+        return new org.springframework.security.core.userdetails.User(user.getUserName(), user.getPassword(), authorities);
     }
 }

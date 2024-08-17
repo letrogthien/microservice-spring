@@ -9,6 +9,7 @@ import gin.authservice.type.TokenType;
 import gin.authservice.models.*;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpHeaders;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -18,6 +19,7 @@ import org.springframework.stereotype.Service;
 import java.util.HashSet;
 import java.util.Set;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class AuthService {
@@ -37,6 +39,8 @@ public class AuthService {
                 )
         );
         UserDetails userDetails = customUserDetailService.loadUserByUsername(authRequest.getUserName());
+        log.error(userDetails.getUsername());
+        log.error("Authorities: {}", userDetails.getAuthorities());
         User user = userService.getByUserName(
                 authRequest.getUserName()
         ).orElseThrow(
@@ -57,7 +61,7 @@ public class AuthService {
             throw new UserAlreadyExist();
         }
         Set<Role> roles = new HashSet<>();
-        roles.add(roleService.getByName(RoleType.CUSTOMER)
+        roles.add(roleService.getByName("CUSTOMER")
                 .orElseThrow(
                         RuntimeException::new
                 ));
@@ -70,6 +74,8 @@ public class AuthService {
                 .build();
         var saveUser = userService.saveUser(user);
         UserDetails userDetails = customUserDetailService.loadUserByUsername(user.getUserName());
+
+
         var accessJwt = jwtService.generateToken(userDetails);
         var refreshJwt = jwtService.generateRefreshToken(userDetails);
         saveToken(accessJwt, saveUser);

@@ -13,7 +13,7 @@ import java.util.List;
 //testing
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("api/v1/auth")
 @RequiredArgsConstructor
 public class UserController {
     private final UserService userService;

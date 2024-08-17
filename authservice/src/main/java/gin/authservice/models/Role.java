@@ -17,10 +17,5 @@ public class Role{
     private Long id;
 
     @Column(nullable = false, unique = true)
-    @Enumerated(EnumType.STRING)
-    private RoleType name ;
-
-    @ManyToMany(mappedBy = "roles")
-    private Set<User> users = new HashSet<>();
-
+    private String name ;
 }
